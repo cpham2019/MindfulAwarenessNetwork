@@ -1,0 +1,80 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Add style to button */
+#theme-button {
+    /* Text decoration */
+    text-decoration: none; /* Remove any default underline */
+
+    /* Font */
+    font-family: Arial, sans-serif; /* Change font to Arial or any other preferred font */
+
+    /* Text color */
+    color: white; /* Change text color to white */
+
+    /* Padding */
+    padding: 10px 20px; /* Add padding to increase clickable area */
+
+    /* Border */
+    border: 2px solid #ccc; /* Change border to a solid line with a light gray color */
+
+    /* Border width */
+    border-width: 1px; /* Make the border super thin */
+}
+
+/* CSS for petition container */
+.petition-container {
+    display: flex; /* Set display to flex */
+    flex-direction: row; /* Set flex direction to row */
+    gap: 20px; /* Add gap between the two divs */
+    width: 100%; /* Set width to 100% */
+    padding-bottom: 50px; /* Add padding to the bottom */
+}
+
+/* CSS for petition paragraph */
+.petition-para {
+    width: 55%; /* Set width to 55% */
+    padding-right: 10px; /* Add padding to the right */
+}
+
+/* CSS for signatures */
+.signatures {
+    width: 45%; /* Set width to 45% */
+    padding-right: 10px; /* Add padding to the right */
+}
+
+/* CSS for highlighting invalid form inputs */
+.error {
+    border: 2px solid red; /* Red border for the input */
+    background-color: pink; /* Pink background color */
+    /* Add any additional styling as needed */
+}
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+    /* Background color */
+    background-color: black;
+
+    /* Text color */
+    color: white;
+
+    /* Border color */
+    border-color: #444;
+
+    /* Additional customizations */
+    /* Add any other styles specific to dark mode here */
+}
+
+/* Fixed footer for recent news section */
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

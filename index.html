@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Awareness Network</title>
+    <link rel="icon" href="https://www.slocounty.ca.gov/getmedia/933abbb1-538e-4a92-b54d-a3402c0ee385/Lane-and-Mae-Be-Kind-to-Your-Mind.png?width=350&height=350">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        h1 {
+            color: #000;
+        }
+        h2 {
+            color: #666;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .important {
+            font-weight: bold;
+        }
+        #interesting {
+            font-style: italic;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .button-container-flex {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button-container-flex button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .main-header {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .sub-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav li {
+            margin: 0 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+        /* Pop-up animation */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .popup p {
+            margin: 0;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><button id="theme-button">Toggle Dark Mode</button></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="blurb-section">
+        <h1 class="main-header">Mindful Awareness Network</h1>
+        <h2 class="sub-header">Hub designed to educate, support, and promote understanding about mental health issues and well-being</h2>
+        <div class="button-container-flex">
+            <button type="button">Get Support</button>
+            <button type="button">Share Your Story</button>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2 class="section-title">About</h2>
+        <p>The Mindful Awareness Network is dedicated to fostering mental health awareness and support through education, resources, and community engagement. Our mission is to create a compassionate environment where individuals can find the help they need and share their experiences.</p>
+    </section>
+
+    <section id="impact">
+        <h2 class="section-title">Impact</h2>
+        <p>Since our inception, the Mindful Awareness Network has positively influenced the lives of thousands. By providing accessible mental health resources and promoting open conversations, we have seen a significant increase in community well-being and individual empowerment.</p>
+    </section>
+
+    <h2 class="section-title" id="video">Featured Video</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BpzVvUGfJeA?si=vZLKwQMnZ2eD11hg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="encouragement-section">
+        <h2 class="sub-header">Words of Encouragement</h2>
+        <div class="encouragement-content">
+            <div class="encouragement-text">
+                <p>Embrace the journey through mental health struggles – it's a testament to your resilience, self-discovery, and inner strength. Despite moments of darkness, your courage shines through, igniting hope. Your story is valued here at Mindful Awareness Network.</p>
+            </div>
+            <div class="encouragement-images">
+                <img src="img/codepath2.jpg" alt="Encouragement Image 1">
+            </div>
+        </div>
+    </div>
+
+    <h2 class="sub-header" id="news">Recent News</h2>
+    <a href="https://people.com/sister-wives-garrison-brown-sister-maddie-claims-social-media-made-him-feel-wasnt-doing-enough-before-death-8610680">Garrison Brown's Sister Maddie Claims Social Media Made Him Feel He 'Wasn’t Doing Enough' Before His Death at 25</a>
+    <p>The article discusses Sister Wives' Garrison Brown's sister Maddie's assertion that social media contributed to his feelings of inadequacy prior to his death.</p>
+
+    <a href="https://www.wilx.com/2024/03/14/watch-former-lions-quarterback-discusses-mental-health-awareness-suicide-prevention/">Former Lions Quarterback Discusses Mental Health Awareness & Suicide Prevention</a>
+    <p>The article discusses a former Lions quarterback's advocacy for mental health awareness and suicide prevention.</p>
+
+    <a href="https://www.yahoo.com/news/exercise-beneficial-mental-health-therapy-033224509.html">Read more about the benefits of exercise for mental health</a>
+    <p>The article explores the beneficial effects of exercise on mental health, highlighting its role as a form of therapy.</p>
+
+    <div class="petition" id="petition">
+        <h2>Sign Our Petition 📢</h2>
+        <div class="petition-container">
+            <div class="petition-para">
+                <p>Support our cause to raise awareness about mental health issues and promote well-being in our community.</p>
+            </div>
+            <div class="signatures" id="signatures">
+                <p>🖊️ John from New York supports this.</p>
+                <p>🖊️ Lisa from California supports this.</p>
+                <p>🖊️ Michael from Texas supports this.</p>
+            </div>
+        </div>
+        <form id="sign-petition" title="sign-petition">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="hometown">Hometown:</label>
+            <input type="text" id="hometown" name="hometown" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        </form>
+        <button id="sign-now-button">Sign Now</button>
+        <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+    </div>
+
+    <div class="popup" id="popup">
+        <p>Thank you for signing the petition!</p>
+    </div>
+
+    <div class="footer">
+        <a href="https://people.com/sister-wives-garrison-brown-sister-maddie-claims-social-media-made-him-feel-wasnt-doing-enough-before-death-8610680">Garrison Brown's Sister Maddie</a>
+        <a href="https://www.wilx.com/2024/03/14/watch-former-lions-quarterback-discusses-mental-health-awareness-suicide-prevention/">Former Lions Quarterback</a>
+        <a href="https://www.yahoo.com/news/exercise-beneficial-mental-health-therapy-033224509.html">Exercise Benefits for Mental Health</a>
+    </div>
+
+    <script>
+        const themeButton = document.getElementById('theme-button');
+        themeButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        let count = 3;
+        if (localStorage.getItem('signatureCount')) {
+            count = parseInt(localStorage.getItem('signatureCount'));
+        } else {
+            localStorage.setItem('signatureCount', count);
+        }
+
+        const updateCounter = () => {
+            const counterElement = document.getElementById('counter');
+            counterElement.textContent = `🖊️ ${count} people have signed this petition and support this cause.`;
+        };
+
+        const addSignature = () => {
+            const name = document.getElementById('name').value;
+            const hometown = document.getElementById('hometown').value;
+            if (name && hometown) {
+                count += 1;
+                localStorage.setItem('signatureCount', count);
+
+                const signaturesDiv = document.getElementById('signatures');
+                const newSignature = document.createElement('p');
+                newSignature.textContent = `🖊️ ${name} from ${hometown} supports this.`;
+                signaturesDiv.appendChild(newSignature);
+
+                updateCounter();
+
+                // Show the pop-up
+                const popup = document.getElementById('popup');
+                popup.style.display = 'block';
+
+                // Hide the pop-up after 3 seconds
+                setTimeout(() => {
+                    popup.style.display = 'none';
+                }, 3000);
+            }
+        };
+
+        document.getElementById('sign-now-button').addEventListener('click', addSignature);
+
+        // Initial counter update
+        updateCounter();
+    </script>
+</body>
+</html>
